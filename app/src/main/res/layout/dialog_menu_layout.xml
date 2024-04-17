@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <Button
+        android:id="@+id/edit_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTintMode="src_over"
+        android:backgroundTint="@color/purple_200"
+        android:background="@drawable/edittext_bg"
+        android:layout_margin="10dp"
+        android:textAllCaps="false"
+        android:stateListAnimator="@null"
+        android:text="Редагувати" />
+    <Button
+        android:id="@+id/delete_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTintMode="src_over"
+        android:backgroundTint="@color/purple_200"
+        android:background="@drawable/edittext_bg"
+        android:layout_margin="10dp"
+        android:textAllCaps="false"
+        android:stateListAnimator="@null"
+        android:text="Видалити" />
+    <Button
+        android:id="@+id/close_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@android:color/transparent"
+        android:stateListAnimator="@null"
+        android:textAllCaps="false"
+        android:text="Закрити" />
+
+</LinearLayout>

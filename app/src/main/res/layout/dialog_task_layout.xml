@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/dialog_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTintMode="src_over"
+        android:background="@drawable/edittext_bg"
+        android:inputType="text"
+        android:layout_margin="10dp"
+        android:lines="1"
+        android:hint="Назва"
+        android:textColor="?attr/colorOnPrimary"
+        android:padding="10dp" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/tag_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/add_tag_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_bg"
+            android:backgroundTint="@color/purple_200"
+            android:backgroundTintMode="src_over"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:textAllCaps="false"
+            android:stateListAnimator="@null"
+            android:text="Мітки" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/dialog_deadline"
+        android:lines="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTintMode="src_over"
+        android:background="@drawable/edittext_bg"
+        android:focusable="false"
+        android:layout_margin="10dp"
+        android:hint="Дата дедлайну"
+        android:textColor="?attr/colorOnPrimary"
+        android:inputType="textNoSuggestions"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/dialog_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:lines="5"
+        android:hint="Опишіть задачу"
+        android:gravity="top|start"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/edittext_bg"
+        android:textColor="?attr/colorOnPrimary"
+        android:backgroundTintMode="src_over"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cancel_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/transparent"
+            android:stateListAnimator="@null"
+            android:textAllCaps="false"
+            android:text="Назад" />
+
+        <Button
+            android:id="@+id/accept_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:background="@drawable/edittext_bg"
+            android:backgroundTint="@color/purple_200"
+            android:backgroundTintMode="src_over"
+            android:textAllCaps="false"
+            android:stateListAnimator="@null"
+            android:text="Створити" />
+
+    </LinearLayout>
+</LinearLayout>

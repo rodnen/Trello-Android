@@ -1,0 +1,5 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="?attr/colorPrimary" /> <!-- Колір заливки фону -->
+    <corners android:radius="10dp" /> <!-- Радіус закруглення кутів -->
+</shape>
